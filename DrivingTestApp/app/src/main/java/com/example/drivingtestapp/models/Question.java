@@ -9,7 +9,8 @@ public class Question implements Serializable {
     private String ideaB;
     private String ideaC;
     private String ideaD;
-    private int answer;
+    private int answer;  // Đáp án đúng (chỉ số của đáp án đúng, ví dụ 1 cho A, 2 cho B, ...)
+    private int userAnswer = -1;  // Câu trả lời của người dùng, mặc định -1 (chưa trả lời)
 
     public Question(int id, String question, String ideaA, String ideaB, String ideaC, String ideaD, int answer) {
         this.id = id;
@@ -21,6 +22,21 @@ public class Question implements Serializable {
         this.answer = answer;
     }
 
+    // Getter và setter cho userAnswer
+    public int getUserAnswer() {
+        return userAnswer;
+    }
+
+    public void setUserAnswer(int userAnswer) {
+        this.userAnswer = userAnswer;
+    }
+
+    // Phương thức kiểm tra xem câu trả lời của người dùng có đúng không
+    public boolean isCorrect() {
+        return userAnswer == answer;
+    }
+
+    // Các getter và setter khác
     public int getId() {
         return id;
     }
@@ -87,6 +103,7 @@ public class Question implements Serializable {
                 ", ideaC='" + ideaC + '\'' +
                 ", ideaD='" + ideaD + '\'' +
                 ", answer=" + answer +
+                ", userAnswer=" + userAnswer +
                 '}';
     }
 }

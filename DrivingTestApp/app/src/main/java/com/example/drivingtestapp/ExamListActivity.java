@@ -23,7 +23,7 @@ public class ExamListActivity extends AppCompatActivity {
         RecyclerView recyclerView_dethi = (RecyclerView) findViewById(R.id.recyclerView_dethi);
 
         // Initialize contacts
-        exams = Exam.createExamsList(20);
+        exams = Exam.createExamsList(5);
         // Create adapter passing in the sample user data
         MyArrayAdapter adapter = new MyArrayAdapter(exams);
         // Attach the adapter to the recyclerview to populate items

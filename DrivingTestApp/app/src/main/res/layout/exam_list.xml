@@ -12,7 +12,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="16dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/pencil" />
+        android:src="@drawable/exam" />
 
     <LinearLayout
         android:layout_width="0dp"

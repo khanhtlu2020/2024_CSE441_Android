@@ -54,6 +54,7 @@ public class Exam {
     // Tạo danh sách đề thi
     public static ArrayList<Exam> createExamsList(int numExams) {
         ArrayList<Exam> exams = new ArrayList<>();
+        lastExamId = 0;
 
         for (int i = 1; i <= numExams; i++) {
             // Ví dụ, có thể tạo các đề thi với số lượng câu hỏi và thời gian khác nhau
