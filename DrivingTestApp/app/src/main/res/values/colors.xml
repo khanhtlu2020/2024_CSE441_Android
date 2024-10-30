@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="blue_primary">#2196F3</color> <!-- Màu xanh dương -->
+    <color name="blue_primary_variant">#1976D2</color> <!-- Biến thể của màu xanh dương -->
+    <color name="blue_secondary">#03A9F4</color> <!-- Màu phụ -->
 </resources>
