@@ -31,10 +31,10 @@
         android:id="@+id/bottom_bar"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="#2196F3"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="#009688">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
             android:id="@+id/btnPrev"
