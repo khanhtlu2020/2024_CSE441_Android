@@ -21,7 +21,7 @@
         <!--            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
         <!--            android:title="Cafe" />-->
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_thi"
+            android:id="@+id/toolbar_main"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="#2196F3"

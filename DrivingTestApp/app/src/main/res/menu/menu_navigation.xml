@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_main"
+        android:title="Trang chủ" />
+
+    <item
+        android:id="@+id/nav_thithusathach"
+        android:title="Thi thử sát hạch" />
+
+    <item
+        android:id="@+id/nav_hoclythuyet"
+        android:title="Học lý thuyết" />
+
+    <item
+        android:id="@+id/nav_bienbao"
+        android:title="Biển báo" />
+
+    <item
+        android:id="@+id/nav_tracuuluat"
+        android:title="Tra cứu luật" />
+
+    <item
+        android:id="@+id/nav_thoat"
+        android:title="Thoát ứng dụng" />
+
+</menu>
