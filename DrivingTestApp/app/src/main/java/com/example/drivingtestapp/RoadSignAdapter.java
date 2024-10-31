@@ -1,31 +1,25 @@
 package com.example.drivingtestapp;
 
 import android.app.Activity;
-import android.content.Intent;
+import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import java.util.ArrayList;
 
-public class LearningAdapter extends RecyclerView.Adapter<LearningAdapter.ViewHolder> {
-
+public class RoadSignAdapter extends RecyclerView.Adapter<RoadSignAdapter.ViewHolder> {
     private Activity context;
-    private ArrayList<Learning> myArray;
+    private ArrayList<RoadSign> roadSignList;
     private int layoutId;
 
-    public LearningAdapter(Activity context, int layoutId, ArrayList<Learning> arr) {
+    public RoadSignAdapter(Activity context, int layoutId, ArrayList<RoadSign> roadSignList) {
         this.context = context;
         this.layoutId = layoutId;
-        this.myArray = arr;
+        this.roadSignList = roadSignList;
     }
 
     @NonNull
@@ -38,28 +32,28 @@ public class LearningAdapter extends RecyclerView.Adapter<LearningAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        Learning myItem = myArray.get(position);
-
-        holder.maCauHoi.setText(myItem.getMaCauHoi());
-        holder.cauHoi.setText(myItem.getCauHoi());
-        holder.dapAn.setText(myItem.getDapAn());
-
+        RoadSign roadSign = roadSignList.get(position);
+        holder.tenBienBao.setText(roadSign.getTenBienBao());
+        holder.noiDungBienBao.setText(roadSign.getNoidungBienBao());
+        // Load image resource by name
+        int resId = context.getResources().getIdentifier(roadSign.getHinh(), "drawable", context.getPackageName());
+        holder.hinh.setImageResource(resId);
     }
 
     @Override
     public int getItemCount() {
-        return myArray.size();
+        return roadSignList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView maCauHoi, cauHoi, dapAn;
+        TextView tenBienBao, noiDungBienBao;
+        ImageView hinh;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            maCauHoi = itemView.findViewById(R.id.txtCauHoi);
-            cauHoi = itemView.findViewById(R.id.txtLuaChon);
-            dapAn = itemView.findViewById(R.id.txtDapAn);
+            tenBienBao = itemView.findViewById(R.id.txtSignName);
+            noiDungBienBao = itemView.findViewById(R.id.txtSignMeaning);
+            hinh = itemView.findViewById(R.id.imgSign);
         }
     }
 }
-

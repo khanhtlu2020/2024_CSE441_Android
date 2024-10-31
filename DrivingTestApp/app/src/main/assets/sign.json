@@ -1,0 +1,130 @@
+{
+  "bienbaocam":
+  [
+    {
+      "TenBienBao": "Biển báo Đường cấm P.101",
+      "NoidungBienBao": "Biển báo Đường cấm: Cấm các loại phương tiện di chuyển cả 2 hướng (ngoại trừ xe ưu tiên theo quy định).",
+      "Hinh": "camp101"
+    },
+    {
+      "TenBienBao": "Biển báo Cấm đi ngược chiều P.102",
+      "NoidungBienBao": "Biển báo Cấm đi ngược chiều: Cấm các loại phương tiện đi vào chiều đặt biển (ngoại trừ xe ưu tiên theo quy định).",
+      "Hinh": "camp102"
+    },
+    {
+      "TenBienBao": "Biển báo Cấm xe máy P.104",
+      "NoidungBienBao": "Biển báo Cấm xe máy: Cấm các loại xe máy đi vào (ngoại trừ xe máy được ưu tiên theo quy định). Biển không áp dụng với người dắt xe máy.",
+      "Hinh": "camp104"
+    },
+    {
+      "TenBienBao": "Biển báo Cấm xe ô tô và xe máy P.105",
+      "NoidungBienBao": "Biển báo Cấm xe ô tô và xe máy: Cấm các loại xe cơ giới và xe máy đi vào, ngoại trừ xe gắn máy và xe ưu tiên theo quy định.",
+      "Hinh": "camp105"
+    },
+    {
+      "TenBienBao": "Biển báo Cấm người đi bộ P.112",
+      "NoidungBienBao": "Biển báo Cấm người đi bộ: Cấm người đi bộ đi vào.",
+      "Hinh": "camp112"
+    },
+    {
+      "TenBienBao": "Biển báo Cấm rẽ trái P.123",
+      "NoidungBienBao": "Biển báo Cấm rẽ trái: Cấm xe các loại xe cơ giới/thô sơ rẽ trái (trừ xe ưu tiên theo quy định). Không áp dụng cấm quay đầu xe.",
+      "Hinh": "camp123trai"
+    },
+    {
+      "TenBienBao": "Biển báo Cấm rẽ phải P.123",
+      "NoidungBienBao": "Biển báo Cấm rẽ phải: Cấm xe các loại xe cơ giới/thô sơ rẽ phải (trừ xe ưu tiên theo quy định). Không áp dụng cấm quay đầu xe.",
+      "Hinh": "camp123phai"
+    }
+  ],
+  "bienbaonguyhiem":
+  [
+    {
+      "TenBienBao": "Biển 201a",
+      "NoidungBienBao": "Chỗ ngoặt vòng bên trái",
+      "Hinh": "bb201a"
+    },
+    {
+      "TenBienBao": "Biển 201b",
+      "NoidungBienBao": "Chỗ ngoặt vòng bên phải",
+      "Hinh": "bb201b"
+    },
+    {
+      "TenBienBao": "Biển 202",
+      "NoidungBienBao": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
+      "Hinh": "bb202"
+    },
+    {
+      "TenBienBao": "Biển 203a",
+      "NoidungBienBao": "Đường hẹp hai bên",
+      "Hinh": "bb203a"
+    },
+    {
+      "TenBienBao": "Biển 203b",
+      "NoidungBienBao": "Đường hẹp bên trái",
+      "Hinh": "bb203b"
+    },
+    {
+      "TenBienBao": "Biển 203c",
+      "NoidungBienBao": "Đường hẹp bên phải",
+      "Hinh": "bb203c"
+    },
+    {
+      "TenBienBao": "Biển 204",
+      "NoidungBienBao": "Đường hai chiều",
+      "Hinh": "bb204"
+    },
+    {
+      "TenBienBao": "Biển 205a",
+      "NoidungBienBao": "Đường giao nhau",
+      "Hinh": "bb205a"
+    }
+  ],
+  "bienbaohieulenh":
+  [
+    {
+      "TenBienBao": "Biển 301a",
+      "NoidungBienBao": "Các xe chỉ được đi thẳng",
+      "Hinh": "bb301a"
+    },
+    {
+      "TenBienBao": "Biển 301b",
+      "NoidungBienBao": "Các xe chỉ được rẽ phải",
+      "Hinh": "bb301b"
+    },
+    {
+      "TenBienBao": "Biển 301c",
+      "NoidungBienBao": "Các xe chỉ được rẽ trái",
+      "Hinh": "bb301c"
+    },
+    {
+      "TenBienBao": "Biển 301d",
+      "NoidungBienBao": "Các xe chỉ được rẽ phải",
+      "Hinh": "bb301d"
+    },
+    {
+      "TenBienBao": "Biển 301e",
+      "NoidungBienBao": "Các xe chỉ được rẽ trái",
+      "Hinh": "bb301e"
+    },
+    {
+      "TenBienBao": "Biển 301f",
+      "NoidungBienBao": "Các xe chỉ đi thẳng, rẽ phải",
+      "Hinh": "bb301f"
+    },
+    {
+      "TenBienBao": "Biển 301h",
+      "NoidungBienBao": "Các xe chỉ đi thẳng, rẽ trái",
+      "Hinh": "bb301h"
+    },
+    {
+      "TenBienBao": "Biển 301i",
+      "NoidungBienBao": "Các xe chỉ rẽ phải, rẽ trái",
+      "Hinh": "bb301i"
+    }
+  ]
+}
+
+
+
+

@@ -1,10 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/item_learning"
+    android:id="@+id/item_roadsign"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:gravity="center_vertical"
-    android:orientation="horizontal"
     android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/imgSign"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/checkbox_off_background" />
 
     <LinearLayout
         android:layout_width="0dp"
@@ -13,25 +21,20 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txtCauHoi"
+            android:id="@+id/txtSignName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Câu số 1"
+            android:text="Biển số"
             android:textColor="@android:color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/txtLuaChon"
-            android:layout_width="match_parent"
+            android:id="@+id/txtSignMeaning"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/txtDapAn"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#4CAF50"
+            android:text="Nội dung"
+            android:textColor="@android:color/darker_gray"
             android:textSize="20sp" />
     </LinearLayout>
 

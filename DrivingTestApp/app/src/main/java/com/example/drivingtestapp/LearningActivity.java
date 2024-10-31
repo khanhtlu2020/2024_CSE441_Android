@@ -67,8 +67,9 @@ public class LearningActivity extends AppCompatActivity implements NavigationVie
                 JSONObject itemObj = jsonArray.getJSONObject(i);
                 String maCauHoi = itemObj.getString("MaCauHoi");
                 String cauHoi = itemObj.getString("CauHoi");
+                String dapAn = itemObj.getString("DapAn");
 
-                itemList.add(new Learning(maCauHoi, cauHoi));
+                itemList.add(new Learning(maCauHoi, cauHoi, dapAn));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -90,10 +91,10 @@ public class LearningActivity extends AppCompatActivity implements NavigationVie
             startActivity(new Intent(this, ExamListActivity.class));
         } else if (id == R.id.nav_hoclythuyet) {
             drawerLayout.closeDrawer(GravityCompat.START);
+        } else if (id == R.id.nav_bienbao) {
+            startActivity(new Intent(this, RoadSignActivity.class));
         }
-//        else if (id == R.id.nav_bienbao) {
-//            startActivity(new Intent(this, BanhNgotActivity.class));
-//        } else if (id == R.id.nav_tracuuluat) {
+//        else if (id == R.id.nav_tracuuluat) {
 //            startActivity(new Intent(this, BanhManActivity.class));
 //        }
         else if (id == R.id.nav_thoat) {

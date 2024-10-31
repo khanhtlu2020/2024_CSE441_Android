@@ -17,7 +17,7 @@ import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button btnExam, btnLearn;
+    Button btnExam, btnLearn, btnSign;
     private DrawerLayout drawerLayout;
 
     @Override
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         btnExam = findViewById(R.id.btnExam);
         btnLearn = findViewById(R.id.btnLearn);
+        btnSign = findViewById(R.id.btnSign);
 
         btnExam.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +41,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, LearningActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnSign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, RoadSignActivity.class);
                 startActivity(intent);
             }
         });
@@ -65,12 +74,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             startActivity(new Intent(this, ExamListActivity.class));
         } else if (id == R.id.nav_hoclythuyet) {
             startActivity(new Intent(this, LearningActivity.class));
+        } else if (id == R.id.nav_bienbao) {
+            startActivity(new Intent(this, RoadSignActivity.class));
         }
 //        else if (id == R.id.nav_tracuuluat) {
-//            startActivity(new Intent(this, BanhNgotActivity.class));
-//        } else if (id == R.id.nav_bienbao) {
-//            startActivity(new Intent(this, BanhManActivity.class));
-//        } else if (id == R.id.nav_tracuuluat) {
 //            startActivity(new Intent(this, CaiDatActivity.class));
 //        }
         else if (id == R.id.nav_thoat) {
