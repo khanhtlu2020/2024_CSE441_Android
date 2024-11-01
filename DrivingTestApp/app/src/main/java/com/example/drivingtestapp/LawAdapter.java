@@ -1,24 +1,31 @@
 package com.example.drivingtestapp;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
-public class RoadSignAdapter extends RecyclerView.Adapter<RoadSignAdapter.ViewHolder> {
+public class LawAdapter extends RecyclerView.Adapter<LawAdapter.ViewHolder> {
+
     private Activity context;
-    private ArrayList<RoadSign> roadSignList;
+    private ArrayList<Law> myArray;
     private int layoutId;
 
-    public RoadSignAdapter(Activity context, int layoutId, ArrayList<RoadSign> roadSignList) {
+    public LawAdapter(Activity context, int layoutId, ArrayList<Law> arr) {
         this.context = context;
         this.layoutId = layoutId;
-        this.roadSignList = roadSignList;
+        this.myArray = arr;
     }
 
     @NonNull
@@ -31,28 +38,25 @@ public class RoadSignAdapter extends RecyclerView.Adapter<RoadSignAdapter.ViewHo
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        RoadSign roadSign = roadSignList.get(position);
-        holder.tenBienBao.setText(roadSign.getTenBienBao());
-        holder.noiDungBienBao.setText(roadSign.getNoidungBienBao());
-        // Load image resource by name
-        int resId = context.getResources().getIdentifier(roadSign.getHinh(), "drawable", context.getPackageName());
-        holder.hinh.setImageResource(resId);
+        Law myLaw = myArray.get(position);
+
+        holder.tenLuat.setText(myLaw.getTenLuat());
+        holder.mucPhat.setText(myLaw.getMucPhat());
+
     }
 
     @Override
     public int getItemCount() {
-        return roadSignList.size();
+        return myArray.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        TextView tenBienBao, noiDungBienBao;
-        ImageView hinh;
+        TextView tenLuat, mucPhat;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            tenBienBao = itemView.findViewById(R.id.txtLaw);
-            noiDungBienBao = itemView.findViewById(R.id.txtSignMeaning);
-            hinh = itemView.findViewById(R.id.imgSign);
+            tenLuat = itemView.findViewById(R.id.txtTenLuat);
+            mucPhat = itemView.findViewById(R.id.txtMucPhat);
         }
     }
 }

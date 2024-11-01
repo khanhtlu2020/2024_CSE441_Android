@@ -15,58 +15,67 @@ import androidx.annotation.NonNull;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class LawListActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    Button btnExam, btnLearn, btnSign, btnLaw;
+    Button btnNghiDinh, btnHieuLenh, btnDungXe, btnTocDo, btnDuongCam;
     private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_law_list);
 
-        btnExam = findViewById(R.id.btnExam);
-        btnLearn = findViewById(R.id.btnLearn);
-        btnSign = findViewById(R.id.btnSign);
-        btnLaw = findViewById(R.id.btnLawDetail);
+        btnNghiDinh = findViewById(R.id.btnNongDoCon);
+        btnHieuLenh = findViewById(R.id.btnHieuLenh);
+        btnDungXe = findViewById(R.id.btnDungXe);
+        btnTocDo = findViewById(R.id.btnTocDo);
+        btnDuongCam = findViewById(R.id.btnDuongCam);
 
-        btnExam.setOnClickListener(new View.OnClickListener() {
+        btnNghiDinh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ExamListActivity.class);
+                Intent intent = new Intent(LawListActivity.this, LawActivity.class);
                 startActivity(intent);
             }
         });
 
-        btnLearn.setOnClickListener(new View.OnClickListener() {
+        btnHieuLenh.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LearningActivity.class);
+                Intent intent = new Intent(LawListActivity.this, LawActivity1.class);
                 startActivity(intent);
             }
         });
 
-        btnSign.setOnClickListener(new View.OnClickListener() {
+        btnDungXe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RoadSignActivity.class);
+                Intent intent = new Intent(LawListActivity.this, LawActivity2.class);
                 startActivity(intent);
             }
         });
 
-        btnLaw.setOnClickListener(new View.OnClickListener() {
+        btnTocDo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, LawListActivity.class);
+                Intent intent = new Intent(LawListActivity.this, LawActivity3.class);
                 startActivity(intent);
             }
         });
 
-        Toolbar toolbar = findViewById(R.id.toolbar_main);
+        btnDuongCam.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LawListActivity.this, LawActivity4.class);
+                startActivity(intent);
+            }
+        });
+
+        Toolbar toolbar = findViewById(R.id.toolbar_lawlist);
         setSupportActionBar(toolbar);
 
-        drawerLayout = findViewById(R.id.drawer_layout_main);
-        NavigationView navigationView = findViewById(R.id.nav_view);
+        drawerLayout = findViewById(R.id.drawer_layout_lawlist);
+        NavigationView navigationView = findViewById(R.id.nav_view_lawlist);
 
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
@@ -78,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.nav_main) {
-            drawerLayout.closeDrawer(GravityCompat.START);
+            startActivity(new Intent(this, MainActivity.class));
         } else if (id == R.id.nav_thithusathach) {
             startActivity(new Intent(this, ExamListActivity.class));
         } else if (id == R.id.nav_hoclythuyet) {
@@ -86,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_bienbao) {
             startActivity(new Intent(this, RoadSignActivity.class));
         } else if (id == R.id.nav_tracuuluat) {
-            startActivity(new Intent(this, LawListActivity.class));
+            drawerLayout.closeDrawer(GravityCompat.START);
         }
         else if (id == R.id.nav_thoat) {
             exit();

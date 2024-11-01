@@ -127,7 +127,7 @@
                 android:src="@drawable/tracuuluat" />
 
             <Button
-                android:id="@+id/btnLaws"
+                android:id="@+id/btnLawDetail"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

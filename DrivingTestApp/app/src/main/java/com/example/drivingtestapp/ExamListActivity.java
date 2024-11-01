@@ -12,7 +12,7 @@ import androidx.core.view.GravityCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.recyclerview.widget.LinearLayoutManager;
+
 import java.util.ArrayList;
 import com.google.android.material.navigation.NavigationView;
 
@@ -65,10 +65,9 @@ public class ExamListActivity extends AppCompatActivity implements NavigationVie
             startActivity(new Intent(this, LearningActivity.class));
         } else if (id == R.id.nav_bienbao) {
             startActivity(new Intent(this, RoadSignActivity.class));
+        } else if (id == R.id.nav_tracuuluat) {
+            startActivity(new Intent(this, LawListActivity.class));
         }
-//        else if (id == R.id.nav_tracuuluat) {
-//            startActivity(new Intent(this, BanhManActivity.class));
-//        }
         else if (id == R.id.nav_thoat) {
             exit();
         }

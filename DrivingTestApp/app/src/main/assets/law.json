@@ -1,0 +1,124 @@
+{
+  "nongdocon": [
+    {
+      "TenLuat": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở",
+      "MucPhat": "Phạt tiền từ 80.000 đồng đến 100.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 80 miligam/100 mililít máu hoặc vượt quá 0,4 miligam/1 lít khí thở",
+      "MucPhat": "Phạt tiền từ 400.000 đồng đến 600.000 đồng."
+    },
+    {
+      "TenLuat": "Không chấp hành yêu cầu kiểm tra về nồng độ cồn của người thi hành công vụ",
+      "MucPhat": "Phạt tiền từ 400.000 đồng đến 600.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở",
+      "MucPhat": "Phạt tiền từ 2.000.000 đồng đến 3.000.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn nhưng chưa vượt quá 50 miligam/100 mililít máu hoặc chưa vượt quá 0,25 miligam/1 lít khí thở",
+      "MucPhat": "Phạt tiền từ 6.000.000 đồng đến 8.000.000 đồng"
+    },
+    {
+      "TenLuat": "Điều khiển xe trên đường mà trong máu hoặc hơi thở có nồng độ cồn vượt quá 50 miligam đến 80 miligam/100 mililít máu hoặc vượt quá 0,25 miligam đến 0,4 miligam/1 lít khí thở",
+      "MucPhat": "Phạt tiền từ 4.000.000 đồng đến 5.000.000 đồng."
+    }
+  ],
+  "hieulenh": [
+    {
+      "TenLuat": "Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường",
+      "MucPhat": "Phạt tiền từ 100.000 đồng đến 200.000 đồng."
+    },
+    {
+      "TenLuat": "Không chấp hành hiệu lệnh hoặc chỉ dẫn của biển báo hiệu, vạch kẻ đường",
+      "MucPhat": "Phạt tiền từ 80.000 đồng đến 100.000 đồng."
+    },
+    {
+      "TenLuat": "Không chấp hành hiệu lệnh, chỉ dẫn của biển báo hiệu, vạch kẻ đường",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 400.000 đồng"
+    },
+    {
+      "TenLuat": "Điều khiển xe kéo rơ moóc không có biển báo hiệu theo quy định",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 400.000 đồng"
+    },
+    {
+      "TenLuat": "Không chấp hành hiệu lệnh của đèn tín hiệu giao thông",
+      "MucPhat": "Phạt tiền từ 100.000 đồng đến 200.000 đồng."
+    },
+    {
+      "TenLuat": "Không chấp hành hiệu lệnh, chỉ dẫn của người điều khiển giao thông hoặc người kiểm soát giao thông",
+      "MucPhat": "Phạt tiền từ 100.000 đồng đến 200.000 đồng."
+    }
+  ],
+  "dungxe": [
+    {
+      "TenLuat": "Dừng xe, đỗ xe trên phần đường xe chạy ở đoạn đường ngoài đô thị nơi có lề đường",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000."
+    },
+    {
+      "TenLuat": "Dừng xe, đỗ xe ở lòng đường đô thị gây cản trở giao thông",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000."
+    },
+    {
+      "TenLuat": "Tụ tập từ 3 xe trở lên ở lòng đường, trong hầm đường bộ",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000."
+    },
+    {
+      "TenLuat": "Đỗ, để xe ở lòng đường đô thị, hè phố trái quy định của pháp luật",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000."
+    },
+    {
+      "TenLuat": "Dừng xe, đỗ xe trên đường xe điện, điểm dừng đón trả khách của xe buýt, nơi đường bộ giao nhau, trên phần đường dành cho người đi bộ qua đường",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000."
+    }
+  ],
+  "tocdo": [
+    {
+      "TenLuat": "Không giữ khoảng cách an toàn để xảy ra va chạm với xe chạy liền trước hoặc không giữ khoảng cách theo quy định của biển báo hiệu 'Cự ly tối thiểu giữa hai xe'",
+      "MucPhat": "Phạt tiền từ 100.000 đồng đến 200.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe chạy dưới tốc độ tối thiểu trên những đoạn đường bộ có quy định tốc độ tối thiểu cho phép",
+      "MucPhat": "Phạt tiền từ 100.000 đồng đến 200.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe chạy quá tốc độ quy định từ 5 km/h đến dưới 10 km/h",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe chạy tốc độ thấp mà không đi bên phải phần đường xe chạy gây cản trở giao thông",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000."
+    },
+    {
+      "TenLuat": "Điều khiển xe chạy tốc độ thấp hơn các xe khác đi cùng chiều mà không đi về bên phải phần đường xe chạy",
+      "MucPhat": "Phạt tiền từ 400.000 đồng đến 600.000 đồng."
+    }
+  ],
+  "duongcam": [
+    {
+      "TenLuat": "Đi vào khu vực cấm",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000 đồng."
+    },
+    {
+      "TenLuat": "Đi vào đường có biển báo hiệu nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000 đồng."
+    },
+    {
+      "TenLuat": "Đi ngược chiều đường của đường một chiều, đường có biển cấm đi ngược chiều",
+      "MucPhat": "Phạt tiền từ 200.000 đồng đến 300.000 đồng."
+    },
+    {
+      "TenLuat": "Điều khiển xe đi vào đường cao tốc",
+      "MucPhat": "Phạt tiền từ 400.000 đồng đến 600.000 đồng."
+    },
+    {
+      "TenLuat": "Đi vào khu vực cấm, đường có biển báo hiệu có nội dung cấm đi vào đối với loại phương tiện đang điều khiển",
+      "MucPhat": "Phạt tiền từ 400.000 đồng đến 600.000 đồng."
+    }
+  ]
+}

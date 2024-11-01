@@ -170,6 +170,8 @@ public class RoadSignActivity extends AppCompatActivity implements NavigationVie
             startActivity(new Intent(this, LearningActivity.class));
         } else if (id == R.id.nav_bienbao) {
             drawerLayout.closeDrawer(GravityCompat.START);
+        } else if (id == R.id.nav_tracuuluat) {
+            startActivity(new Intent(this, LawListActivity.class));
         } else if (id == R.id.nav_thoat) {
             exit();
         }

@@ -16,6 +16,24 @@
         android:theme="@style/Theme.DrivingTestApp"
         tools:targetApi="31">
         <activity
+            android:name=".LawActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".LawActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".LawActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".LawActivity1"
+            android:exported="false" />
+        <activity
+            android:name=".LawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LawListActivity"
+            android:exported="false" />
+        <activity
             android:name=".RoadSignActivity"
             android:exported="false" />
         <activity

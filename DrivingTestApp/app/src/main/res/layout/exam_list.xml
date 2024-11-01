@@ -21,7 +21,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/txtDe"
+            android:id="@+id/txtTenLuat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Đề số 1"
@@ -29,7 +29,7 @@
             android:textSize="16sp" />
 
         <TextView
-            android:id="@+id/txtSoluongcauhoi"
+            android:id="@+id/txtMucPhat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="25 câu/19 phút"

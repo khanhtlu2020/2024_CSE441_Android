@@ -24,52 +24,51 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class LearningActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class LawActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
-    RecyclerView recyclerViewLearning;
-    ArrayList<Learning> itemList;
-    LearningAdapter adapter;
+    RecyclerView recyclerViewLuat;
+    ArrayList<Law> itemList;
+    LawAdapter adapter;
     private DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_learning);
+        setContentView(R.layout.activity_law);
 
-        Toolbar toolbar = findViewById(R.id.toolbar_learning);
+        Toolbar toolbar = findViewById(R.id.toolbar_nongdocon);
         setSupportActionBar(toolbar);
 
-        drawerLayout = findViewById(R.id.drawer_layout_learning);
-        NavigationView navigationView = findViewById(R.id.nav_view_thi);
+        drawerLayout = findViewById(R.id.drawer_layout_nongdocon);
+        NavigationView navigationView = findViewById(R.id.nav_view_nongdocon);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
 
         navigationView.setNavigationItemSelectedListener(this);
 
-        recyclerViewLearning = findViewById(R.id.recyclerView_learning);
+        recyclerViewLuat = findViewById(R.id.recyclerView_nongdocon);
         itemList = new ArrayList<>();
         loadItemsFromJson();
-        recyclerViewLearning.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new LearningAdapter(this, R.layout.learning_list, itemList);
-        recyclerViewLearning.setAdapter(adapter);
+        recyclerViewLuat.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new LawAdapter(this, R.layout.law_list, itemList);
+        recyclerViewLuat.setAdapter(adapter);
     }
 
     private void loadItemsFromJson() {
         try {
             AssetManager assetManager = getAssets();
-            InputStream inputStream = assetManager.open("learning.json");
+            InputStream inputStream = assetManager.open("law.json");
             String jsonStr = convertStreamToString(inputStream);
             JSONObject jsonObj = new JSONObject(jsonStr);
-            JSONArray jsonArray = jsonObj.getJSONArray("hoclythuyet");
+            JSONArray jsonArray = jsonObj.getJSONArray("nongdocon");
 
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject itemObj = jsonArray.getJSONObject(i);
-                String maCauHoi = itemObj.getString("MaCauHoi");
-                String cauHoi = itemObj.getString("CauHoi");
-                String dapAn = itemObj.getString("DapAn");
+                String tenLuat = itemObj.getString("TenLuat");
+                String mucPhat = itemObj.getString("MucPhat");
 
-                itemList.add(new Learning(maCauHoi, cauHoi, dapAn));
+                itemList.add(new Law(tenLuat, mucPhat));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -84,13 +83,12 @@ public class LearningActivity extends AppCompatActivity implements NavigationVie
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
-
         if (id == R.id.nav_main) {
             startActivity(new Intent(this, MainActivity.class));
         } else if (id == R.id.nav_thithusathach) {
             startActivity(new Intent(this, ExamListActivity.class));
         } else if (id == R.id.nav_hoclythuyet) {
-            drawerLayout.closeDrawer(GravityCompat.START);
+            startActivity(new Intent(this, LearningActivity.class));
         } else if (id == R.id.nav_bienbao) {
             startActivity(new Intent(this, RoadSignActivity.class));
         } else if (id == R.id.nav_tracuuluat) {
@@ -99,11 +97,9 @@ public class LearningActivity extends AppCompatActivity implements NavigationVie
         else if (id == R.id.nav_thoat) {
             exit();
         }
-
         drawerLayout.closeDrawer(GravityCompat.START);
         return true;
     }
-
 
     private void exit() {
         finishAffinity();

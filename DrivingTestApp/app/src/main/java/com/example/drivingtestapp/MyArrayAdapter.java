@@ -40,8 +40,8 @@ public class MyArrayAdapter extends RecyclerView.Adapter<MyArrayAdapter.ViewHold
         public ViewHolder(View itemView) {
             super(itemView);
             deImageView = itemView.findViewById(R.id.imgDe);
-            deTextView = itemView.findViewById(R.id.txtDe);
-            soluongCauhoiTextView = itemView.findViewById(R.id.txtSoluongcauhoi);
+            deTextView = itemView.findViewById(R.id.txtTenLuat);
+            soluongCauhoiTextView = itemView.findViewById(R.id.txtMucPhat);
             lamBaiButton = itemView.findViewById(R.id.btnLamBai);
         }
     }
